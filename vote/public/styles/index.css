@@ -1,0 +1,59 @@
+/*首页样式*/
+header {
+    height: 30vh;
+    background: url("../images/banner.png") no-repeat;
+    background-size: 100% 100%;
+    background-origin: padding-box;
+}
+
+.nav-container {
+    margin: 10px 5%;
+    display: block;
+}
+
+.nav-link-introduction {
+    margin-top: 2vh;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+    color: #7fb1ff;
+}
+
+.nav-link {
+    display: flex;
+    height: 8vh;
+    line-height: 8vh;
+    vertical-align: middle;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+    background: url("../images/bg.png");
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-origin: padding-box;
+    margin-top: 2vh;
+    padding: 0 5%;
+    box-shadow: 3px 3px 3px 3px rgba(28, 67, 211, 0.3);
+    text-decoration: none;
+}
+
+.nav-link .nav-title {
+    padding-top: 5px;
+    font-size: 8vm;
+    flex: 1;
+    color: #fefefe;
+}
+
+article {
+    margin: 20px 5%;
+    font-size: 15vm;
+    color: #191919;
+}
+
+article p {
+    text-align: left;
+    letter-spacing: 2px;
+    word-break: break-all;
+}
+
+

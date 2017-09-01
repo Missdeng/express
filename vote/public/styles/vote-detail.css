@@ -1,0 +1,66 @@
+/*排名与票数部分*/
+.nav-bar {
+    /*background-color: #bfbfbf;*/
+    height: 4vh;
+    line-height: 4vh;
+    padding: 2vh 0;
+}
+
+.nav-bar div {
+    width: 49%;
+    float: left;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.nav-bar div:first-child {
+    border-right: 1px solid #bfbfbf;
+}
+
+/*内容位置定位*/
+.offset-18vh {
+    position: relative;
+    top: 18vh;
+}
+
+/*头像图片区域*/
+.header-area {
+    height: 35vh;
+    background: #E4EFFF;
+    text-align: center;
+    padding: 2vh 0;
+}
+
+.header-area img {
+    height: 35vh;
+    width: 50%;
+}
+
+.item {
+    text-align: center;
+}
+
+.desc {
+    word-break: break-all;
+    margin: auto 3%;
+    text-overflow: ellipsis;
+}
+
+footer .btn-vote-lg {
+    width: 100%;
+    border: none;
+    margin-top: 1vh;
+    height: 7vh;
+    line-height: 7vh;
+    color: #fff;
+    font-size: 0.5rem;
+    letter-spacing: 0.2rem;
+    background-color: #fec61b;
+}
+
+.btn-vote-lg:active {
+    color: rgba(255, 255, 255, 0.6);
+}
+.btn-vote-lg:disabled{
+    background:rgba(254,198,27,0.6);
+}

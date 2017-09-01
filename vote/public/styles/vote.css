@@ -1,0 +1,249 @@
+/*投票页面样式*/
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.hd-title {
+    height: 10vh;
+    line-height: 10vh;
+    background: url("../images/header-bg.png") no-repeat;
+    background-size: 100% 100%;
+    background-origin: padding-box;
+    color: #fefefe;
+    text-align: center;
+    font-size: 5vmin;
+    vertical-align: middle;
+}
+
+/*tab选项栏*/
+.hd-tab-bar {
+    margin: 2vh 2vh;
+    height: 6vh;
+    line-height: 6vh;
+    display: flex;
+    border: 1px solid #7aaeff;
+    align-content: center;
+}
+
+/*tab选项卡*/
+.tab-bar-btn {
+    flex: 1;
+    text-align: center;
+    font-size: 3vmin;
+    background-color: #fff;
+    color: #b0b0b0;
+}
+
+.tab-bar-btn:before {
+    content: '';
+    position: relative;
+    top: 0.5vh;
+    height: 0.1vh;
+    padding-top: 0.3vh;
+}
+
+/*选中状态*/
+.tabbar-active {
+    background-color: #7aaeff;
+    color: #fff;
+}
+
+/*搜索栏*/
+.search-bar {
+    margin: 2vh 2vh;
+    height: 6vh;
+    line-height: 6vh;
+    vertical-align: middle;
+    border: 1px solid #7aaeff;
+    display: flex;
+    align-content: center;
+}
+
+.search-bar input {
+    margin-left: 5%;
+    width: 70%;
+    height: 4vh;
+    line-height: 4vh;
+    outline-style: none;
+    border: none;
+    font-size: 2.5vmin;
+    display: inline-block;
+}
+
+.search-bar span {
+    margin-left: 10%;
+    width: 15%;
+    height: 6vh;
+    line-height: 6vh;
+    text-align: center;
+    background: #7aaeff;
+    font-size: 2.5vmin;
+    color: #fff;
+    display: inline-block;
+}
+
+.search-bar span:active {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.offset-28vh {
+    position: relative;
+    top: 28vh;
+    margin: 0 2vh;
+}
+
+.offset-20vh {
+    position: relative;
+    top: 20vh;
+    margin: 0 2vh;
+}
+
+.vote-container, .rank-container {
+    margin: auto auto;
+}
+
+.vote-cell {
+    padding-top: 3vh;
+    box-sizing: border-box;
+    position: relative;
+    width: 48%;
+    float: left;
+    margin-bottom: 2vh;
+    background: #E4EFFF;
+    color: #191919;
+    text-align: center;
+    text-decoration: none;
+}
+
+.vote-cell:active {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.vote-container .vote-cell:nth-child(odd) {
+    margin-right: 4%;
+}
+
+/*投票部分选项*/
+.vote-cell img {
+    width: 15vh;
+    height: 12vh;
+}
+
+.vote-cell .name {
+    font-size: 1rem;
+    color: #252525;
+}
+
+.vote-cell .vote-num {
+    font-size: 0.75rem;
+    color: #252525;
+}
+
+.color-fe1b1b {
+    color: #fe1b1b;
+}
+
+/*投票按钮*/
+.btn-vote {
+    box-sizing: content-box;
+    margin: 5% 5%;
+    margin-top: -1%;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    padding-top: 0.2rem;
+    color: #fff;
+    font-size: 0.5rem;
+    background-color: #fec61b;
+}
+
+.btn-vote:active {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/*排行榜*/
+
+.rank-cell {
+    height: 10vh;
+    background-color: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-top: 1px solid #bfbfbf;
+    clear: both;
+}
+
+.rank-cell:first-child {
+    border: none;
+}
+
+/*名次*/
+.rank-cell .ranking {
+    width: 10%;
+    float: left;
+    height: 10vh;
+    line-height: 10vh;
+    margin-left: 1%;
+    text-align: center;
+}
+
+/*名次图片大小*/
+.rank-cell .ranking img {
+    display: block;
+    margin-top: 2.5vh;
+    width: 5vh;
+    height: 5vh;
+}
+
+.rank-cell .ranking label {
+    font-size: 1.5rem;
+}
+
+/*头像*/
+.rank-cell .header {
+    width: 20%;
+    float: left;
+    height: 10vh;
+    line-height: 10vh;
+    text-align: center;
+}
+
+.rank-cell .header img {
+    display: block;
+    margin-top: 1vh;
+    width: 8vh;
+    height: 8vh;
+}
+
+/*信息部分*/
+.rank-cell .info {
+    float: left;
+    width: 40%;
+    height: 8vh;
+    margin-top: 2vh;
+    text-align: left;
+}
+
+.info > span:first-of-type {
+    color: #252525;
+    font-size: 1rem;
+}
+
+.info > span:nth-of-type(2) {
+    font-size: 0.75rem;
+    color: #6d6d6d;
+}
+
+/*投票数*/
+.rank-cell .vote-number {
+    display: inline-block;
+    line-height: 10vh;
+    float: right;
+    font-size: 1rem;
+    color: #252525;
+    right: 2%;
+    text-align: right;
+}
+

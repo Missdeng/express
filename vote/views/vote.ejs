@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/vote.css">
+    <script src="../scripts/lib/jquery-3.2.1.min.js"></script>
+    <script src="../scripts/lib/angular-1.4.6.min.js"></script>
+    <script src="../scripts/base.js"></script>
+
+</head>
+<body>
+<div class="page" ng-app="voteApp" ng-controller="voteCtrl">
+    <!--头部-->
+    <header>
+        <div class="hd-title">{{title}}</div>
+        <div class="hd-tab-bar">
+            <div class="tab-bar-btn tabbar-active" id="btnVote" ng-click="onToggleTab(0)">投票</div>
+            <div class="tab-bar-btn " id="btnRanking" ng-click="onToggleTab(1)">排行榜</div>
+        </div>
+        <!--搜索区-->
+        <div class="search-bar" ng-show="showSearchBar">
+            <input type="text" value="{{userInput}}" placeholder="请输入编号或者名字" ng-model="userInput">
+            <span ng-click="onSearch(userInput)">搜索</span>
+        </div>
+    </header>
+    <!--内容部分-->
+    <div class="content offset-28vh">
+        <!--参与人列表-->
+        <div class="vote-container">
+            <!--参与人列表-->
+            <div class="vote-cell" ng-repeat="item in voteList" ng-click="onToVoteDetail(item.candidateNo,item.typeNo)">
+                <!--头像-->
+                <img src="../images/header/{{item.imgName}}"/>
+                <div class="name">{{item.name}}</div>
+                <div class="vote-num"><label class="color-fe1b1b fs-1rem">{{item.number}}</label>票</div>
+                <div class="btn-vote" ng-click="onVote($event,item.candidateNo)">投票</div>
+            </div>
+        </div>
+        <!--排行榜列表-->
+        <div class="rank-container">
+            <div class="rank-cell" ng-repeat="item in rankingList">
+                <!--名次-->
+                <div class="ranking">
+                    <img src="../images/1.png" ng-if="item.rank == '1' "/>
+                    <label ng-if="item.rank != '1' ">{{item.rank}}</label>
+                </div>
+                <!--头像-->
+                <div class="header">
+                    <img src="../images/header/{{item.imgName}}"/>
+                </div>
+                <!--信息-->
+                <div class="info">
+                    <span>{{item.name}}</span><br>
+                    <span>{{item.position}}</span>
+                </div>
+                <!--票数-->
+                <div class="vote-number">
+                    <label class="color-fe1b1b fs-1dot5rem">{{item.number}}&nbsp;</label>票
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--底部-->
+    <footer>
+        <img src="../images/logo.png"/>
+    </footer>
+    <div class="toast" ng-if="toastStatus">{{content}}</div>
+</div>
+<script src="../scripts/vote.js"></script>
+</body>
+</html>

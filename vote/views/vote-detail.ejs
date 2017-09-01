@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/vote.css">
+    <link rel="stylesheet" href="../styles/vote-detail.css">
+    <script src="../scripts/lib/jquery-3.2.1.min.js"></script>
+    <script src="../scripts/lib/angular-1.4.6.min.js"></script>
+    <script src="../scripts/base.js"></script>
+</head>
+<body>
+<div class="page" ng-app="voteDetailApp" ng-controller="voteDetailCtrl">
+    <!--头部-->
+    <header>
+        <div class="hd-title">{{title}}</div>
+        <div class="nav-bar">
+            <div>票数:&nbsp;&nbsp;<label class="color-fe1b1b fs-1dot5rem"><%= candidate.number %></label></div>
+            <div>排名:&nbsp;&nbsp;<label class="color-fe1b1b fs-1dot5rem"><%= candidate.rank %></label></div>
+        </div>
+    </header>
+    <div class="content offset-18vh">
+        <div class="header-area">
+            <img src="../images/header/<%= candidate.imgName %>">
+        </div>
+        <div></div>
+        <div class="item" style="margin-top:2vh;"><%= candidate.name %></div>
+        <div class="item"><%= candidate.position %></div>
+        <div class="item"><%= candidate.company %></div>
+        <div class="desc">
+            &nbsp;&nbsp; <%= candidate.description %>
+        </div>
+    </div>
+    <!--底部-->
+    <footer>
+        <button class="btn-vote-lg" ng-click="onVote($this)" >投票</button>
+    </footer>
+</div>
+<script src="../scripts/vote-detail.js"></script>
+</body>
+</html>

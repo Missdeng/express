@@ -1,0 +1,77 @@
+* {
+    margin: auto auto;
+}
+
+.page {
+    font-family: "Microsoft Himalaya", -apple-system-font, Helvetica Neue, sans-serif;
+    line-height: 1.6;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.content {
+    height: 60vh;
+    overflow-y: scroll;
+}
+
+/*向右图标  */
+.arrow {
+    padding-right: 4.6%;
+    position: relative;
+}
+
+.arrow:after {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -10px;
+    border-width: 4px 4px 0 0;
+    border-style: solid;
+    border-color: #fefefe;
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 8vh;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+footer img {
+    width: 221.33px;
+    height: 22.67px;
+}
+
+/*1.5rem 字号*/
+.fs-1dot5rem {
+    font-size: 1.5rem;
+}
+
+/*1rem字号*/
+.fs-1rem {
+    font-size: 1rem;
+}
+
+.toast {
+    position: fixed;
+    top: 50%;
+    left: 15%;
+    right: 15%;
+    z-index: 9999;
+    text-align: center;
+    color: #fff;
+    padding: 0.5rem 1.25rem;
+    line-height: 3vh;
+    font-size: 0.75rem;
+    background: rgba(0, 0, 0, 0.4);
+}
