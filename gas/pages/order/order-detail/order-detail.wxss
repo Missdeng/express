@@ -1,0 +1,11 @@
+/* pages/order/order-detail/order-detail.wxss */
+@import '../my-order/my-order.wxss';
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  line-height: 5vh;
+}

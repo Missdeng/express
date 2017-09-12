@@ -1,0 +1,100 @@
+<!--pages/order/order-detail/order-detail.wxml-->
+<!--pages/order/my-order/my-order.wxml-->
+<view class='container'>
+  <view class='list-header fs-15'>
+    <view class='name'>
+      订单详情
+    </view>
+    <view class='status'>
+      <label class='color-ed5965'>已完成</label>
+    </view>
+  </view>
+  <view class='list fs-20' style='margin-top:1vh;'>
+    <view class='list-item line-height-8vh'>
+      <view class='name'>服务商家:
+      </view>
+      <view class='date'>
+        <label class='color-a9a9a9'>武汉测试加油站</label>
+      </view>
+    </view>
+    <view class='list-item fs-15 line-height-5vh'>
+      <view class='sub-list color-a9a9a9'>
+        <view class='sub-list-item color-000'>
+          <view class='name'>商品名称:</view>
+        </view>
+        <view class='sub-list-item'>
+          <view class='name'>洗车</view>
+          <view class='amount'>¥100.00x1</view>
+        </view>
+        <view class='sub-list-item'>
+          <view class='name'>洗车</view>
+          <view class='amount'>¥100.00x1</view>
+        </view>
+        <view class='sub-list-item'>
+          <view class='name'>洗车</view>
+          <view class='amount'>¥100.00x1</view>
+        </view>
+        <view class='sub-list-item'>
+          <view class='name'>洗车</view>
+          <view class='amount'>¥100.00x1</view>
+        </view>
+      </view>
+    </view>
+    <view class='list-item line-height-8vh'>
+      <view class='name'>实付金额:
+      </view>
+      <view class='date'>
+        <label class='color-a9a9a9'>288 (节省8元)</label>
+      </view>
+    </view>
+  </view>
+  <!--预约订单信息部分  -->
+  <view class='list'>
+    <view class='list-item line-height-8vh'>
+      <view class='name'>预约时间:
+      </view>
+      <view class='date'>
+        <label class='color-a9a9a9'>2017-07-09 11:38:22</label>
+      </view>
+    </view>
+    <view class='list-item line-height-8vh'>
+      <view class='name'>联系人:
+      </view>
+      <view class='date'>
+        <label class='color-a9a9a9'>张三</label>
+      </view>
+    </view>
+    <view class='list-item line-height-8vh'>
+      <view class='name'>联系电话:
+      </view>
+      <view class='date'>
+        <label class='color-a9a9a9'>1231212121212</label>
+      </view>
+    </view>
+  </view>
+  <!--订单列表项  -->
+  <view class='list'>
+    <view class='list-item line-height-8vh'>
+      <view class='name'>支付方式:
+      </view>
+      <view class='date'>
+        <label class='color-a9a9a9'>微信支付</label>
+      </view>
+    </view>
+    <view class='list-item line-height-8vh'>
+      <view class='name'>订单编号:
+      </view>
+      <view class='date'>
+        <label class='color-a9a9a9'>1231212121212</label>
+      </view>
+    </view>
+    <view class='list-item line-height-8vh'>
+      <view class='name'>订单时间:
+      </view>
+      <view class='date'>
+        <label class='color-a9a9a9'>2017-07-09 11:38:22</label>
+      </view>
+    </view>
+  </view>
+  <view style='height:5vh;'></view>
+</view>

@@ -1,0 +1,4 @@
+<!--pages/my-red-packet/my-red-packet.wxml-->
+<view class='demo'>
+  <view></view>
+</view>

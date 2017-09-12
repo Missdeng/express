@@ -1,0 +1,87 @@
+/**app.wxss**/
+
+page {
+  background-color: #f5f5f5;
+}
+
+/*向右图标  */
+
+.arrow, .arrow-2, .arrow-3 {
+  padding-right: 4.6%;
+  position: relative;
+}
+
+.arrow-2:after {
+  content: '';
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  margin-top: -0.3rem;
+  border-width: 0.05rem 0.05rem 0 0;
+  border-style: solid;
+  transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+  border-color: #7d7d7d;
+}
+
+.arrow-3:after {
+  content: '';
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  margin-top: -0.25rem;
+  border-width: 0.05rem 0.05rem 0 0;
+  border-style: solid;
+  transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+  border-color: #ed5965;
+}
+
+.arrow:after {
+  content: '';
+  display: inline-block;
+  width: 0.7rem;
+  height: 0.7rem;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  margin-top: -0.5rem;
+  border-width: 0.15rem 0.15rem 0 0;
+  border-style: solid;
+  border-color: #fff;
+  transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+}
+
+.line-height-8vh {
+  line-height: 8vh;
+}
+
+.line-height-5vh {
+  line-height: 5vh;
+}
+
+.color-ed5965 {
+  color: #ed5965;
+}
+
+.color-a9a9a9 {
+  color: #a9a9a9;
+}
+
+.color-000 {
+  color: #000;
+}
+
+/*字体大小  */
+
+.fs-20 {
+  font-size: 1rem;
+}
+
+.fs-15 {
+  font-size: 0.75rem;
+}

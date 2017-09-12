@@ -1,0 +1,35 @@
+<!--pages/order/my-order/my-order.wxml-->
+<view class='container'>
+  <view class='list'>
+    <view class='list-item line-height-8vh'>
+      <view class='name'>武汉测试加油站
+        <label class='color-ed5965'>(预约中)</label>
+      </view>
+      <view class='date'>2017-07-09 11:38</view>
+    </view>
+    <view class='list-item line-height-5vh '>
+      <view class='sub-list color-a9a9a9'>
+        <view class='sub-list-item'>
+          <view class='name'>洗车</view>
+          <view class='amount'>¥100.00x1</view>
+        </view>
+        <view class='sub-list-item'>
+          <view class='name'>洗车</view>
+          <view class='amount'>¥100.00x1</view>
+        </view>
+        <view class='sub-list-item'>
+          <view class='name'>洗车</view>
+          <view class='amount'>¥100.00x1</view>
+        </view>
+        <view class='sub-list-item'>
+          <view class='name'>洗车</view>
+          <view class='amount'>¥100.00x1</view>
+        </view>
+      </view>
+    </view>
+    <navigator class='list-item line-height-8vh' url=''>
+      <view class='detail color-ed5965'>查看详情</view>
+      <view class='arrow-3'></view>
+    </navigator>
+  </view>
+</view>

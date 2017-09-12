@@ -1,0 +1,37 @@
+<!--pages/order/reservation/reservation.wxml-->
+<view class='container'>
+  <view class='list'>
+    <view class='list-item line-height-8vh'>
+      <view class='name'>
+        武汉测试加油站
+      </view>
+      <view class='date'>
+        <label class='color-ed5965'>预约中</label>
+      </view>
+    </view>
+    <view class='list-item line-height-5vh'>
+      <view class='sub-list color-a9a9a9'>
+        <view class='sub-list-item'>
+          <view class='name'>套餐:</view>
+          <view class='amount'>小保养套餐A</view>
+        </view>
+        <view class='sub-list-item'>
+          <view class='name'>预约时间:</view>
+          <view class='amount'>2017-07-09 11:38</view>
+        </view>
+        <view class='sub-list-item'>
+          <view class='name'>联系人:</view>
+          <view class='amount'>张三</view>
+        </view>
+        <view class='sub-list-item'>
+          <view class='name'>联系电话:</view>
+          <view class='amount'>131123567</view>
+        </view>
+      </view>
+    </view>
+    <view class='list-item-btn' hidden='{{status}}'>
+      <view class='item-btn color-a9a9a9'>取消预约</view>
+      <view class='item-btn color-ed5965'>立即支付</view>
+    </view>
+  </view>
+</view>

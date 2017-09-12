@@ -1,0 +1,66 @@
+<!--pages/my/my.wxml-->
+<view class='container'>
+  <image src='../../../images/header.png' class='header-bg'></image>
+  <!--头部文字显示部分  -->
+  <view class='header'>
+    <view class='user-header'>
+      <image src='../../../images/header.png' mode='widthFix'></image>
+    </view>
+    <view class='user-info'>
+      <text>加油赞</text>
+      <text>13564715036</text>
+    </view>
+    <view class='right arrow'>
+    </view>
+  </view>
+  <!--内容  -->
+  <view class='content'>
+    <!--信息显示  -->
+    <view class='card'>
+      <view class='card-item'>
+        <view class='size'>100L</view>
+        <view class='name'>累计加油量</view>
+      </view>
+      <view class='card-item'>
+        <view class='size'>¥999.00</view>
+        <view class='name'>累计消费金额</view>
+      </view>
+      <view class='card-item'>
+        <view class='size'>¥100.00</view>
+        <view class='name'>累计节省金额</view>
+      </view>
+    </view>
+    <!--列表页面跳转菜单  -->
+    <view class='menu'>
+      <view class='list'>
+        <navigator class='list-item' open-type='navigate' url='../../order/my-order/my-order'>
+          <image src='../../../images/icon/order.png' class='icon'></image>
+          <view class='text'>我的订单</view>
+          <view class='arrow-2'></view>
+        </navigator>
+        <navigator class='list-item' open-type='navigate' url='../../my-red-packet/my-red-packet'>
+          <image src='../../../images/icon/red-packets.png' class='icon'></image>
+          <view class='text'>我的红包</view>
+          <view class='arrow-2'></view>
+        </navigator>
+        <navigator class='list-item'>
+          <image src='../../../images/icon/add-user.png' class='icon'></image>
+          <view class='text'>我的邀请</view>
+          <view class='arrow-2'></view>
+        </navigator>
+        <navigator class='list-item' open-type='navigate' url='../../my-collection/my-collection'>
+          <image src='../../../images/icon/star-empty.png' class='icon'></image>
+          <view class='text'>我的收藏</view>
+          <view class='arrow-2'></view>
+        </navigator>
+      </view>
+      <view class='list'>
+        <navigator class='list-item'>
+          <image src='../../../images/icon/mobile.png' class='icon'></image>
+          <view class='text'>绑定手机号</view>
+          <view class='arrow-2'></view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>

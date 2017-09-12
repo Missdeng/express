@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/my-red-packet/my-red-packet",
+    "pages/order/order-detail/order-detail",
+    "pages/order/reservation/reservation",
+    "pages/order/my-order/my-order",
+    "pages/tab/my/my",
+    "pages/tab/gas/gas",
+    "pages/tab/activity/activity",
+    "pages/tab/car-service/car-service",
+    "pages/my-collection/my-collection"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#36353A",
+    "navigationBarTitleText": "加油赞",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#444444",
+    "backgroundColor": "#F8F8F8",
+    "selectedColor": "#ED5965",
+    "list": [
+      {
+        "pagePath": "pages/tab/gas/gas",
+        "text": "加油",
+        "iconPath": "images/tab/tint.png",
+        "selectedIconPath": "images/tab/tint-active.png"
+      },
+      {
+        "pagePath": "pages/tab/car-service/car-service",
+        "text": "汽车服务",
+        "iconPath": "images/tab/car.png",
+        "selectedIconPath": "images/tab/car-active.png"
+      },
+      {
+        "pagePath": "pages/tab/activity/activity",
+        "text": "活动",
+        "iconPath": "images/tab/gift.png",
+        "selectedIconPath": "images/tab/gift-active.png"
+      },
+      {
+        "pagePath": "pages/tab/my/my",
+        "text": "我的",
+        "iconPath": "images/tab/user.png",
+        "selectedIconPath": "images/tab/user-active.png"
+      }
+    ]
+  }
+}
